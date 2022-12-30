@@ -1,3 +1,4 @@
+// Initial data
 var finances = [
   ["Jan-2010", 867884],
   ["Feb-2010", 984655],
@@ -86,13 +87,17 @@ var finances = [
   ["Jan-2017", 138230],
   ["Feb-2017", 671099],
 ];
-let financesSum = finances.reduce((accumulator, finItem) => {
-  return accumulator + finItem[1];
-}, 0);
+
 let maxDiff = null;
 let maxdate = null;
 let minDiff = null;
 let mindate = null;
+
+// Total earnings
+let financesSum = finances.reduce((accumulator, finItem) => {
+  return accumulator + finItem[1];
+}, 0);
+// Differences in earnings
 let financesDifference = finances.reduce((accumulator, finItem, index) => {
   if (index === finances.length - 1) {
     return accumulator;
@@ -109,6 +114,8 @@ let financesDifference = finances.reduce((accumulator, finItem, index) => {
 
   return accumulator + diff;
 }, 0);
+
+// Result
 console.log(`Financial Analysis\n
 --------------------------------------------------\n
 Total Months: ${finances.length}
