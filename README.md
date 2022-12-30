@@ -3,7 +3,7 @@
 ## Description
 
 This Project was created to practice JavaScript Fundamentals.
-Goal of this Project is to calculate finfcial differences over months and to practice usage of JavaScript functionality.
+Goal of this Project is to calculate finfcial differences over months and to practice usage of JavaScript language.
 
 At the beginning we have an array with initial data.
 
